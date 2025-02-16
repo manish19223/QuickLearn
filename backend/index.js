@@ -25,8 +25,8 @@ app.use(
   })
 );
 const allowedOrigins = [
+  "https://quick-learn-213y.vercel.app",
   "http://localhost:5173", 
-  "https://quick-learn-213y.vercel.app"
 ];
 
 app.use(

@@ -24,10 +24,7 @@ app.use(
     tempFileDir: "/tmp/",
   })
 );
-const allowedOrigins = [
-  "https://quick-learn-213y.vercel.app",
-  "http://localhost:5173", 
-];
+const allowedOrigins = process.env.FRONTEND_URL
 
 app.use(
   cors({

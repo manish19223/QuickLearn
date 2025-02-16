@@ -17,7 +17,7 @@ function AdminLogin() {
     console.log({ password });
     try {
       const response = await axios.post(
-        `http://localhost:4002/api/v1/admin/login`,
+        `https://quicklearn-r605.onrender.com/api/v1/admin/login`,
         {
           email,
           password,

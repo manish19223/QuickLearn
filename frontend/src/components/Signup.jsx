@@ -20,7 +20,7 @@ function Signup() {
 
     try {
       const response = await axios.post(
-        `http://localhost:4002/api/v1/user/signup`,
+        `https://quicklearn-r605.onrender.com/api/v1/user/signup`,
         {
           firstName,
           lastName,

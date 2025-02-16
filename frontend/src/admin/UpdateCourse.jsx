@@ -20,7 +20,7 @@ function UpdateCourse() {
     const fetchCourseData = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:4002/api/v1/course/${id}`,
+          `https://quicklearn-r605.onrender.com/api/v1/course/${id}`,
           {
             withCredentials: true,
           }
@@ -68,7 +68,7 @@ function UpdateCourse() {
     }
     try {
       const response = await axios.put(
-        `http://localhost:4002/api/v1/course/update/${id}`,
+        `https://quicklearn-r605.onrender.com/api/v1/course/update/${id}`,
         formData,
         {
           headers: {

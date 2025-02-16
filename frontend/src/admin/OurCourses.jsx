@@ -22,7 +22,7 @@ function OurCourses() {
     const fetchCourses = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4002/api/v1/course/courses`,
+          `https://quicklearn-r605.onrender.com/api/v1/course/courses`,
           {
             withCredentials: true,
           }
@@ -41,7 +41,7 @@ function OurCourses() {
   const handleDelete = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:4002/api/v1/course/delete/${id}`,
+        `https://quicklearn-r605.onrender.com/api/v1/course/delete/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

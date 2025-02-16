@@ -29,7 +29,7 @@ function Buy() {
     const fetchBuyCourseData = async () => {
       try {
         const response = await axios.post(
-          `http://localhost:4002/api/v1/course/buy/${courseId}`,
+          `https://quicklearn-r605.onrender.com/api/v1/course/buy/${courseId}`,
           {},
           {
             headers: {
@@ -115,12 +115,16 @@ function Buy() {
       };
       console.log("Payment info: ", paymentInfo);
       await axios
-        .post(`http://localhost:4002/api/v1/order`, paymentInfo, {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-          withCredentials: true,
-        })
+        .post(
+          `https://quicklearn-r605.onrender.com/api/v1/order`,
+          paymentInfo,
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+            withCredentials: true,
+          }
+        )
         .then((response) => {
           console.log(response.data);
         })

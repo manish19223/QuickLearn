@@ -19,7 +19,7 @@ function AdminSignup() {
 
     try {
       const response = await axios.post(
-        `http://localhost:4002/api/v1/admin/signup`,
+        `https://quicklearn-r605.onrender.com/api/v1/admin/signup`,
         {
           firstName,
           lastName,

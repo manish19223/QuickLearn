@@ -29,7 +29,7 @@ function Home() {
     const fetchCourses = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4002/api/v1/course/courses`,
+          `https://quicklearn-r605.onrender.com/api/v1/course/courses`,
           {
             withCredentials: true,
           }
@@ -47,7 +47,7 @@ function Home() {
   const handleLogout = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:4002/api/v1/user/logout`,
+        `https://quicklearn-r605.onrender.com/api/v1/user/logout`,
         {
           withCredentials: true,
         }

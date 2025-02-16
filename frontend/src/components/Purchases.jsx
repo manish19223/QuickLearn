@@ -39,7 +39,7 @@ function Purchases() {
     const fetchPurchases = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4002/api/v1/user/purchases`,
+          `https://quicklearn-r605.onrender.com/api/v1/user/purchases`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -58,9 +58,12 @@ function Purchases() {
   // Logout
   const handleLogout = async () => {
     try {
-      const response = await axios.get(`http://localhost:4002/api/v1/user/logout`, {
-        withCredentials: true,
-      });
+      const response = await axios.get(
+        `https://quicklearn-r605.onrender.com/api/v1/user/logout`,
+        {
+          withCredentials: true,
+        }
+      );
       toast.success(response.data.message);
       localStorage.removeItem("user");
       navigate("/login");

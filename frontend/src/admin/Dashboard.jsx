@@ -8,7 +8,7 @@ function Dashboard() {
   const handleLogout = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:4002/api/v1/admin/logout`,
+        `https://quicklearn-r605.onrender.com/api/v1/admin/logout`,
         {
           withCredentials: true,
         }

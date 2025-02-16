@@ -39,7 +39,7 @@ function CourseCreate() {
 
     try {
       const response = await axios.post(
-        `http://localhost:4002/api/v1/course/create`,
+        `https://quicklearn-r605.onrender.com/api/v1/course/create`,
         formData,
         {
           headers: {

@@ -26,7 +26,7 @@ app.use(
 );
 const allowedOrigins = [
   "http://localhost:5173", 
-  "https://quicklearn-r605.onrender.com"
+  "https://quick-learn-213y.vercel.app/"
 ];
 
 app.use(
